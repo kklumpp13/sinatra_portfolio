@@ -224,12 +224,9 @@ line-height: 1;
   
 }
 
-/*.thumbnail img {
-width: 100%;
-}*/
-
 .thumbnail .caption {
   padding: 0px;
+  margin-top: 10px;
 }
 
 .btn-primary {
@@ -250,10 +247,7 @@ width: 100%;
     .thumbnail  {
       padding: 20%;
     }
-    .about-picture img{
-      overflow:visible;
-      width:100%
-    }
+  
   }
 */
 
@@ -315,15 +309,13 @@ width: 100%;
 
 
 .about-picture img {
-  margin-left: -15px;
+  margin-left: -11px;
   width: 100%;
     margin-right: -14px;
 }
 
 .about-txt {
-/*  background: grey;*/
   float: right;
-  padding-right: 48px;
   margin-top: 30px;
 }
 
@@ -346,15 +338,13 @@ width: 100%;
 
 
 
-/*
 @media only screen 
 and (min-width: 450px)
 and (max-width: 768px) {
   .about.about-txt-p {
-    padding: 0 50%;
+    padding: 10px;
   }
 }
-*/
 
 /*
 .clearfix:before,
