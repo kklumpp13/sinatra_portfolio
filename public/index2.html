@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Krystal Klumpp | Web Developer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
     <!--Google fonts go here--> 
+   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">  
+    <link rel="stylesheet" href="https://github.com/marcvannieuwenhuijzen/BootstrapXL/blob/master/BootstrapXL.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <link rel="stylesheet" href="font-mfizz/font-mfizz.css">
     <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">  
+     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,7 +26,6 @@
   </head>
   
   <body data-spy="scroll" data-target=".navbar" data-offset="70" id="featured">
-    
   <header>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -38,6 +41,7 @@
         <div class="collapse navbar-collapse" id="collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#featured">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#services">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <!--<li><a href="#contact">Contact</a></li>-->
@@ -59,7 +63,36 @@
   </header>
     
     
-    <div class="main"> <!--id's will correspond to navigation-->  
+    <div class="main"> <!--id's will correspond to navigation--> 
+    
+    <!--About -->
+    <div class="page" id="about">
+      <div class="container-fluid clearfix">
+         <div class="row">
+          
+           <div class="about-picture col-lg-8">
+             <img src="img/hanglider-web.jpg"  alt="Hanglider in Korea" >
+           </div><!--about-picture-->
+     
+      
+          <div class="about-txt col-lg-4">
+            <h2>About Me</h2>
+            <div class="about-txt-p">
+             <p>Upon graduating with a BA in Japanese Language and Literature from the University of Georgia, I enlisted in the US Army for four years where I served as a target audience analyst and cultural expert over the course of two deployments to Afghanistan. While in the Army, I earned my MA in International Relations.</p>
+             <p>After leaving the Army, I lived in Harbin, China for 7 months studying Chinese before I enrolled in the Communication Studies program at Temple University in Tokyo, Japan. Studying the transition to digital journalism media outlets are undergoing piqued my interest in web development so I returned home to attend Wyncode Academy's 9-week coding bootcamp in Fort Lauderdale, FL.At Wyncode we study a wide range of topics including Ruby on Rails, JavaScript, HTML5/CSS5 and Bootstrap.</p>
+             <p>When I'm not immersed in coding, I enjoy photography, traveling and learning new languages.</p>  
+             
+             </div><!--about-txt-p end-->
+          </div><!--about-txt-->
+          
+        </div><!--row closed-->
+      </div> <!-- content container closed-->
+    </div><!--About closed-->
+      
+       
+        
+         
+           
       <div class="page" id="services">
         <div class="content container">
           <h2>Skills</h2>
@@ -118,7 +151,7 @@
         <div class="row">
           <ul>
             
-            <li class="thumbnail img-responsive col-md-3">
+            <li class="thumbnail img-responsive col-md-2">
               <a href="#enable" data-toggle="modal"><img src="img/Enable-150.jpg" alt="Betterish JLPT"></a>
               <div class="caption">
                 <h3>EnAble Japan</h3>
@@ -127,7 +160,7 @@
               </div>
             </li>
             
-            <li class="thumbnail img-responsive col-md-3">
+            <li class="thumbnail img-responsive col-md-2">
               <a href="#betterish" data-toggle="modal"><img src="img/Betterish-150.jpg" alt="Betterish JLPT"></a>
               <div class="caption">
                 <h3>Betterish JLPT</h3>
@@ -136,19 +169,31 @@
               </div>
             </li>
             
-            <li class="thumbnail img-responsive col-md-3">
-              <a href="#dig" data-toggle="modal"><img src="img/DIG-Podcast-Image.jpg" alt="Betterish JLPT"></a>
+            <li class="thumbnail img-responsive col-md-2">
+              <a href="#dig" data-toggle="modal"><img src="img/DIG-Podcast-Image.jpg" alt="DIG Travel Magazine"></a>
               <div class="caption">
                 <h3>DIG Travel Magazine</h3>
-                <p>Founder</p>
+                <p>Co-founder</p>
                 <p><a href="#dig" data-toggle="modal" class="btn btn-primary" role="button">Read more</a></p>
               </div>
             </li>
+            
+            <li class="thumbnail img-responsive col-md-2">
+              <a href="#dig" data-toggle="modal"><img src="img/DIG-Podcast-Image.jpg" alt="Wynoverflow"></a>
+              <div class="caption">
+                <h3>DIG Travel Magazine</h3>
+                <p>Co-founder</p>
+                <p><a href="#wynoverflow" data-toggle="modal" class="btn btn-primary" role="button">Read more</a></p>
+              </div>
+            </li>
+            
           </ul>
         </div><!--row-->
       </div><!--portfolio-->
     </div><!--portfolio--> 
     
+    
+     
       
 
       
@@ -161,7 +206,7 @@
           <div class="row">
             <div class="social-container">
               <ul class="social">
-                <li class="col-md-3">
+                <li class="col-xs-3 col-md-3">
                   <a href="#">
                     <a rel="GitHub" class="git" target="_blank" title="Krystal Klumpp GitHub account" href="https://github.com/kklumpp13">
                       <i class="fa fa-github fa-2x"></i>
@@ -169,7 +214,7 @@
                   </a>
                 </li>
                 
-                 <li class="col-md-3">
+                 <li class="col-xs-3 col-md-3">
                   <a href="#">
                     <a rel="Twitter" class="Twitter" title="Krystal Klumpp Twitter profile" target="_blank" href="https://twitter.com/kklumpp13">
                       <i class="fa fa-twitter fa-2x"></i>
@@ -177,14 +222,14 @@
                   </a>
                 </li>
                  
-                <li class="col-md-3">
+                <li class="col-xs-3 col-md-3">
                   <a href="#">
                     <a rel="LinkedIn" class="linkedin" target="_blank" title="Krystal Klumpp LinkedIn profile" href="https://www.linkedin.com/in/krystalklumpp">
                       <i class="fa fa-linkedin fa-2x"></i>
                     </a>
                   </a>
                   
-                <li class="col-md-3">
+                <li class="col-xs-3 col-md-3">
                   <a href="#">
                     <a href="mailto:krystal@tabularasamultimedia.com" title="drop a line">
                       <i class="fa fa-envelope-o fa-2x"></i>
@@ -277,6 +322,23 @@
     </div><!--these are larger images--><!--float to left of page-->
     
     
+    <div id="wynoverflow" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">  
+        <div class="modal-body">
+          <div class="modal-header">
+            <h3>WynOverflow</h3>
+          </div>
+          <div>
+          <img src="img/Betterish-150.jpg" alt="WynOverflow" class="img-responsive pull-left btr">
+          </div>  
+          <p class="modal-text">One difficulty in attending a coding bootcamp is that you need as much time with TAs as possible. So for our first group assignment at Wyncode, our team created <a href="https://wynoverflow.herokuapp.com/" class="wyn-link">WynOverflow</a>. This forum gives students a place to both ask questions about homework assignments and to learn from other students' solutions. This way TAs can spend less time repeating themselves and students improve their code reading skills. </p> 
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div><!--modal-body-->         
+      </div> <!--modal-dialog-->
+    </div><!--these are larger images--><!--float to left of page-->
+    
     
     
     
@@ -292,3 +354,10 @@
     <!--<script src="js/myscript.js"></script>-->
   </body>
 </html>
+
+
+
+
+
+
+
