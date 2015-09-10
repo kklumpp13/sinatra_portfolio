@@ -302,18 +302,21 @@ text-align: justify;
   display: block;
   padding: 0;
   margin-right: -10px;
+
 }
 
 
 .about-picture img {
   margin-left: -11px;
   width: 100%;
-    margin-right: -14px;
+  margin-right: -14px;
 }
 
 .about-txt {
   float: right;
   margin-top: 30px;
+  text-align: center;
+  margin-left: 150px;
 }
 
 .about-txt h2 {
@@ -323,9 +326,10 @@ text-align: justify;
 }
 
 .about-txt p {
-  padding:12px;
+/*  padding:12px;*/
   text-align: justify;
-  padding-right: 37px;
+/*  padding-right: 37px;*/
+  
 }
 
 #about .container-fluid {
