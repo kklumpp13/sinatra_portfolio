@@ -1,0 +1,539 @@
+/**************************************/
+/*           GENERAL                  */
+/**************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Raleyway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family "Open Sans", sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;;
+}
+
+a:hover {
+  color: #D75C37;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+.overall-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/**************************************/
+/*           NAV                      */
+/**************************************/
+
+nav {
+  background: #5B6165;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+.nav-bar li a {
+  color: #fff;
+  display: inline-block;
+  padding: 1rem 2rem;
+  width:100%;
+}
+
+.nav-bar li:hover {
+  background: #D75C37;
+  background: #394042;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  nav {
+    order: 2;
+  }
+  
+  #contact {
+    order: 3;
+  }
+  
+  footer {
+    order: 4;
+  }
+  
+  
+}
+
+
+/**************************************/
+/*           HEADER                   */
+/**************************************/
+
+header {
+  background: #4AAAA5;
+  background: #6991AC;
+  text-align: center;
+  min-height: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  
+}
+
+header h1, header h2, header h4, header a {
+  color: #fff;
+}
+
+header h1 {
+  font-size: 4rem;
+  letter-spacing: 6px;
+}
+
+header h1, header h2 {
+  margin-bottom: 1rem;
+}
+
+header h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+header h4 {
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+}
+
+header a {
+  padding: 20px 50px 18px 50px;
+  background: #394042;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 550px) {
+  header h1 {
+    font-size: 3.7rem;
+  }
+  
+  header h2 {
+    font-size: 1.7rem;
+  }
+}
+
+/**************************************/
+/*           ABOUT                    */
+/**************************************/
+
+#about {
+  display: flex;
+  width: 100%;
+}
+
+#about img {
+  height: auto;
+  flex: 1 0 50%;
+}
+
+#about article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  flex: 1 0 50%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1201px) {
+  #about {
+    flex-direction: column;
+  }
+  #about img {
+    order: 1;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  #about img {
+    display: none;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  #about article {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #about article {
+    padding: 3.5rem;
+  }
+}
+
+/**************************************/
+/*           SKILLS                   */
+/**************************************/
+
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  background: #F5F5F5;
+/*  background: #C3D7DF;*/
+  min-height: 28vh;
+}
+
+#skills h2 {
+  flex: 1 0 100%;
+  text-align: center;
+}
+
+#skills-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  width: 70%;
+
+}
+
+.skills-blocks {
+  padding: 2rem;
+  text-align: center;
+  flex-shrink: 0;
+  flex-basis: 14%;
+}
+
+.skills-blocks i {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 750px) {  
+  .skills-blocks {
+    flex-basis: 50%;
+  }
+  
+  #skills h2 {
+    padding-top: 1rem;
+  }
+  
+}
+
+@media screen and (min-width: 751px) and (max-width: 1149px) {
+  .skills-blocks {
+    flex-basis: 33%;
+  }
+  
+  #skills h2 {
+    padding-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #skills-wrapper {
+    width: 90%;
+  }
+}
+/**************************************/
+/*           PORTFOLIO                */
+/**************************************/
+
+.portfolio {
+  background: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.portfolio h2 {
+  padding: 1rem 0 3rem 0;
+  font-size: 2rem;
+}
+
+.portfolio h3 {
+  font-weight: 700;
+}
+
+.portfolio ul {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.portfolio li {
+  border: 1px solid #dddddd;
+  padding: 3rem 0;
+  flex-basis: 20%;
+}
+
+.portfolio img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.portfolio p {
+  margin: .3rem 0;
+}
+
+.tech-stack {
+  font-style: italic;
+}
+
+.portfolio-btn {
+  background: #262b2c;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: .5rem;
+  display: inline-block;
+}
+
+.portfolio-btn:hover {
+  background: #707C80;
+}
+
+
+
+@media screen and (max-width: 550px) {
+  .portfolio {
+   padding-bottom: 0;
+  }
+  .portfolio li {
+    flex-basis: 100%;
+    border-bottom: 1px solid #dddddd;
+    border-top: none;
+    padding: .4rem 0 2.6rem 0;
+  }
+  
+  .portfolio h2 {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1200px) {
+  .portfolio li {
+    flex-basis: 45%;
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+/**************************************/
+/*           CONTACT                  */
+/**************************************/
+
+#contact {
+  background: #394042; 
+  background: #7ACCC8;
+  background: #C3D7DF;
+/*  background: #F5F5F5;*/
+
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #394042;
+  font-size: 18x;
+  font-family: 'Bariol-Regular', serif;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+/*  text-align: center;*/
+}
+
+#contact i {
+  color: #707C80;
+  color: #D75C37;
+  color: #394042;
+}
+
+#contact i:hover {
+  color: #D75C37;
+}
+
+#contact ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+
+
+/**************************************/
+/*           CONTACT                  */
+/**************************************/
+
+footer {
+  text-align: center;
+  font-size: .8rem;
+}
+
+@media screen and (max-width: 1201px) {
+  #contact ul {
+    width: 95%;
+    padding-left: 0;
+  }
+  
+}
+
+
+
+/**************************************/
+/*           ENABLE                   */
+/**************************************/
+
+.portfolio-page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-header {
+  background: #6991AC;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.portfolio-header h1 {
+  font-weight: bold;
+}
+
+.portfolio-header h1, .portfolio-header h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.portfolio-header h2 {
+  font-size: 1.5rem;
+}
+
+.portfolio-description {
+  margin-bottom: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  border; 1px solid red;
+}
+
+.portfolio-description a {
+  color: #6991AC;
+}
+
+.portfolio-description ul {
+  padding-left: 2rem;
+}
+
+.portfolio-description li {
+  list-style: circle;
+  padding: .3rem;
+}
+
+.screenshots {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.screenshots h3 {
+  background: #C3D7DF;
+  color: #fff;
+  padding: .8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.screenshots img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #E3E4E4;
+  padding: 5px;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: .8rem;
+  text-align: center;
+}
+
+figure {
+  padding-bottom: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 750px) {
+  .portfolio-page-wrapper {
+    flex-direction: row;
+  }
+  
+  .portfolio-description {
+    flex: 1 0 50%;
+    padding: 1rem 3rem .5rem 2rem;
+    text-align:right;
+    background: #F5F5F5;
+  }
+  
+  .portfolio-description li {
+    list-style: none;
+  }
+  
+  .description {
+    color: #6991AC;
+  }
+  
+  .screenshots {
+    flex: 1 0 50%;
+    max-height: 100%;
+    margin-top: 0;
+    padding-top: 1rem;
+    overflow: scroll;
+  }
+  
+  .screenshots h3 {
+    display: none;
+  }
+}
+
+
+
+
