@@ -204,6 +204,7 @@ header a {
 }
 
 #about img {
+  max-width: 100%;
   height: auto;
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 50%;
@@ -315,7 +316,8 @@ header a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70%;
+  width: 80%;
+  padding-top: 1rem;
 }
 
 .skills-blocks {
