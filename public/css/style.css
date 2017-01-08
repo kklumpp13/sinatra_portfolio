@@ -1,8 +1,4 @@
-/**************************************/
-/*           GENERAL                  */
-/**************************************/
-
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -14,7 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 100;
   margin: 0;
 }
@@ -565,7 +561,7 @@ footer {
   margin-bottom: 1rem;
   width: 80%;
   margin: 0 auto;
-  border; 1px solid red;
+  border: 1px solid red;
 }
 
 .portfolio-description a {
