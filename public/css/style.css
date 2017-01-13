@@ -203,9 +203,11 @@ header a {
   letter-spacing: 2px;
 }
 
+@media sc
+
 @media screen and (max-width: 550px) {
   header h1 {
-    font-size: 3.7rem;
+    font-size: 8vw;
   }
 
   header h2 {
